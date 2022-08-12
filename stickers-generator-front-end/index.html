@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Gerador de figurinhas</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a class="header-logo" href="#">Gerador de Figurinhas</a>
+    </div>
+    <!--container-->
+  </header>
+  <main>
+    <section class="generate-sticker">
+      <div class="container">
+        <div class="sticker-configuration ">
+          <h1>Cria sua figurinha!</h1>
+          <p>Para criar uma figurinha do seu filme favorito, antes de tudo, selecione uma <a href="#search">imagem de
+              filme</a>.</p>
+          <form>
+            <label for="urlImg">Url da imagem:</label>
+            <input type="text" name="urlImg" id="urlImg" disabled autocomplete="off" />
+            <label for="fontSize">Escolha o tamanho da fonte:</label>
+            <select name="fontSize" id="fontSize">
+              <option value="16">Menor</option>
+              <option value="14">Maior</option>
+            </select>
+            <label for="fontColor">Escolha a cor do texto:</label>
+            <input type="color" name="fontColor" id="fontColor" />
+            <label for="comment">Comentário na figurinha (limite de 16 caracteres):</label>
+            <input type="text" name="comment" id="comment" autocomplete="off" />
+            <button id="btn-generateSticker" type="button">Gerar</button>
+          </form>
+        </div>
+        <div id="sticker-viewer">
+          <div id="image-placeholder"></div>
+          <div id="frase-placeholder">
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </section>
+    <section class="filmes">
+      <div class="container">
+        <form>
+          <div class="barra-pesquisa">
+            <input type="search" name="search" id="search" placeholder="Pesquise um filme" />
+            <button id="btn-search" type="button"></button>
+          </div>
+        </form>
+        <div id="filmes-wrapper"></div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
