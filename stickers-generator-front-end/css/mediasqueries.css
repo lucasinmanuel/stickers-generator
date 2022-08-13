@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+  .generate-sticker .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+  }
+  .sticker-configuration {
+    width: 100%;
+  }
+  input {
+    outline: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 19px;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    border: 0;
+    border-radius: 5px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+
+  select#fontSize {
+    display: block;
+    max-width: 300px;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto 20px auto;
+  }
+
+  input[type="color"] {
+    display: block;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+  }
+  #sticker-viewer {
+    width: 100%;
+    margin: 20px auto 0 auto;
+  }
+  #filmes-wrapper div {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    text-align: center;
+  }
+  #filmes-wrapper div {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #filmes-wrapper div {
+    width: 100%;
+  }
+}

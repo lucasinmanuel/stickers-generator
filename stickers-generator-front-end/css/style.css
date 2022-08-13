@@ -32,11 +32,11 @@ header {
   font-weight: bold;
 }
 
-.generate-sticker .container {
+section.generate-sticker .container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px 0;
+  padding: 30px 3%;
 }
 
 .sticker-configuration {
@@ -100,24 +100,28 @@ input[type="color"] {
 }
 
 #sticker-viewer {
-  width: 25%;
+  width: 100%;
+  max-width: 375px;
   border: 5px solid #191919;
   background-color: white;
   display: flex;
   flex-direction: column;
-  position: relative;
+}
+
+#sticker-viewer img {
+  width: 100%;
+  max-width: 500px;
 }
 
 #image-placeholder {
+  display: flex;
   width: 100%;
-  max-width: 500px;
   height: 510px;
   background-color: #bcbcbc;
 }
 
 #frase-placeholder {
   width: 100%;
-  max-width: 500px;
   height: 90px;
   background-color: gray;
 }
@@ -130,16 +134,12 @@ input[type="color"] {
   font-weight: bold;
 }
 
-#sticker-viewer img {
-  width: 100%;
-}
-
-.filmes {
+section.filmes {
   background-color: #afafaf;
 }
 
-.filmes .container {
-  padding: 30px 0;
+section.filmes .container {
+  padding: 30px 3%;
 }
 
 .barra-pesquisa {
